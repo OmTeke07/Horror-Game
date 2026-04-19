@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Based Horror Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Adaptive survival experiment</p>
+        <h1>AI-Based Horror Game</h1>
+        <p class="summary">
+          Explore a blackout facility, collect three memory shards, and survive a creature that studies
+          your habits in real time.
+        </p>
+        <div class="hero-tags">
+          <span>Reactive Hunter</span>
+          <span>Dynamic Sanity</span>
+          <span>Neon Nightmare</span>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-card">
+          <h2>How To Survive</h2>
+          <ul>
+            <li><span>Move</span> <code>WASD</code> or arrow keys</li>
+            <li><span>Flashlight</span> <code>F</code> to toggle</li>
+            <li><span>Hide</span> <code>E</code> near lockers</li>
+            <li><span>Objective</span> Find 3 shards, then reach the exit</li>
+          </ul>
+        </div>
+        <div class="brief-card">
+          <p class="brief-label">Incident Brief</p>
+          <p id="briefText" class="brief-text">
+            Sentinel AI has fused with a predatory signal. It mirrors careless movement and punishes routine.
+          </p>
+        </div>
+        <button id="startButton" class="start-button">Enter The Facility</button>
+      </div>
+    </header>
+
+    <main class="game-layout">
+      <section class="canvas-frame">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="AI-Based Horror Game"></canvas>
+        <div id="overlayMessage" class="overlay-message visible">
+          <h2>Awaiting Entry</h2>
+          <p>Press the button above, then trust your instincts.</p>
+        </div>
+      </section>
+
+      <aside class="hud-panel">
+        <div class="stat-block">
+          <label>Sanity</label>
+          <div class="meter"><div id="sanityBar" class="meter-fill sanity"></div></div>
+          <strong id="sanityValue">100%</strong>
+        </div>
+
+        <div class="stat-block">
+          <label>Battery</label>
+          <div class="meter"><div id="batteryBar" class="meter-fill battery"></div></div>
+          <strong id="batteryValue">100%</strong>
+        </div>
+
+        <div class="stat-grid">
+          <div class="mini-card">
+            <span>Shards</span>
+            <strong id="shardValue">0 / 3</strong>
+          </div>
+          <div class="mini-card">
+            <span>Noise</span>
+            <strong id="noiseValue">Low</strong>
+          </div>
+          <div class="mini-card">
+            <span>AI Mood</span>
+            <strong id="aiMoodValue">Studying</strong>
+          </div>
+          <div class="mini-card">
+            <span>Status</span>
+            <strong id="statusValue">Waiting</strong>
+          </div>
+          <div class="mini-card">
+            <span>Threat</span>
+            <strong id="threatValue">Dormant</strong>
+          </div>
+          <div class="mini-card">
+            <span>Echo</span>
+            <strong id="echoValue">None</strong>
+          </div>
+        </div>
+
+        <div class="objective-block">
+          <label>Current Objective</label>
+          <p id="objectiveText">Enter the facility and begin scanning for memory shards.</p>
+        </div>
+
+        <div class="log-block">
+          <label>System Log</label>
+          <div id="eventLog" class="event-log"></div>
+        </div>
+
+        <div class="log-block threat-block">
+          <label>Threat Feed</label>
+          <div id="threatFeed" class="threat-feed"></div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
