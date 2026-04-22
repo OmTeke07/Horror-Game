@@ -24,9 +24,9 @@ body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(87, 128, 182, 0.26), transparent 38%),
-    radial-gradient(circle at 80% 10%, rgba(255, 107, 125, 0.09), transparent 30%),
-    linear-gradient(180deg, #081018 0%, #05060a 45%, #020304 100%);
+    radial-gradient(circle at top, rgba(87, 132, 191, 0.26), transparent 38%),
+    radial-gradient(circle at 80% 10%, rgba(254, 85, 104, 0.09), transparent 30%),
+    linear-gradient(180deg, #081018 0%, #05060a 45%, #070b0e 100%);
   overflow-x: hidden;
 }
 
