@@ -20,7 +20,7 @@ const briefText = document.getElementById("briefText");
 
 const WORLD = {
   width: 960,
-  height: 540,
+  height: 560,
 };
 
 const walls = [
