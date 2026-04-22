@@ -5,13 +5,13 @@
   --border: rgba(126, 149, 184, 0.24);
   --fog: rgba(171, 205, 255, 0.08);
   --accent: #86e7ff;
-  --accent-soft: #55a9d7;
-  --danger: #ff6b7d;
-  --amber: #f7c26d;
-  --green: #92f0b3;
+  --accent-soft: #166c9a;
+  --danger: #fe223c;
+  --amber: #ffb33a;
+  --green: #cef9dd;
   --text: #ecf2ff;
-  --muted: #99a9c5;
-  --shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+  --muted: #8b9bb8;
+  --shadow: 0 30px 90px rgba(6, 5, 5, 0.45);
 }
 
 * {
