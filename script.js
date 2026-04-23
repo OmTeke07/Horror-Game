@@ -77,12 +77,12 @@ function resetState() {
   state.lastTime = 0;
   state.keys.clear();
   state.player = {
-    x: 42,
-    y: 50,
-    radius: 14,
-    speed: 170,
-    sanity: 100,
-    battery: 100,
+    x: 40,
+    y: 45,
+    radius: 16,
+    speed: 160,
+    sanity: 105,
+    battery: 120,
     flashlightOn: true,
     shards: 0,
     hidden: false,
