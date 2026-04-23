@@ -94,8 +94,8 @@ function resetState() {
     facingY: 0,
   };
   state.enemy = {
-    x: 860,
-    y: 470,
+    x: 850,
+    y: 460,
     radius: 17,
     speed: 64,
     detection: 120,
